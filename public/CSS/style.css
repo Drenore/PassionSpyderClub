@@ -10,6 +10,9 @@ body{
 .headerFix{
     height: 60px;
 }
+.bg-yellow{
+    background-color: #FFCB01;
+}
 .navBox{
     
     
@@ -33,7 +36,7 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     font-family: Helvetica, "Helvetica Neue", "Trebuchet MS", sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     margin: 2px;
     padding: 15px 10px 15px 10px;
     text-shadow: 0px 1px 1px black;
@@ -76,14 +79,31 @@ nav a{
 .imgPrinc{
     width: 100%;
     height: 700px;
-    position: relative;
+    position: absolute;
     z-index: -2;
     
 }
 .textImage{
     position: absolute;
-    background-color: rgba(200, 200, 200, 0.4);
+    background-color: rgba(2, 2, 2, 0.3);
     width: 100%;
     height: 700px;
     z-index: 2;
+}
+.textbann{
+    
+    color: white;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 8px black;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.redCol{
+    color: #D03E18;
+    font-size: 60px;
+   
 }

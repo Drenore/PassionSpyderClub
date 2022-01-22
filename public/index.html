@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="CSS/style.css">
     <!-- Lien vers CSS Bootstrap -->
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Lien pour Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
      <!-- Lien vers jQuery internet -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Lien vers jQuery bootsrap -->
@@ -17,7 +21,7 @@
     
 </head>
 <body>
-    <header class="bg-dark headerFix" id="bandeHaut">
+    <header class="bg-dark   headerFix" id="bandeHaut">
         <div class="container">
             <div class="text-center p-3">
                 <img src="images/logoTopSpyder.png" alt="Passion Spyder Club Estima Association">
@@ -42,35 +46,15 @@
     <section class="startpage" id="section">
         <img src="images/imagePrinc.jpg" class="imgPrinc" alt="Passion Spyder Club Estima Association">
         <div class="textImage">
+            <div class="textbann">
+            <h1> Bienvenue sur <br><br> <span class="redCol"> Passion Spyder Club  </span></h1>
+            </div>
 
         </div>
 
     </section>
     <script>
-       $(window).scroll(function () {
-    if ($(window).scrollTop() >= 50) {
-        $('#bandeHaut').css('display', 'none');
-        $('#navBar').css('position', 'fixed');
-        $('#navBar').css('top', '0');
-        $('#banner').css('margin-top', '170px');
-        $('#logoNavMobile').css('top', '20px');
-        $('#bannerMob').css('margin-top', '170px');
-        $('#section').css('margin-top', '160px');
-
-
-
-    } else {
-        $('#bandeHaut').css('display', 'block');
-        $('#navBar').css('position', 'static');
-        $('#navBar').css('top', '0');
-        $('#banner').css('margin-top', '0px');
-
-        $('#logoNavMobile').css('top', '60px');
-        $('#bannerMob').css('margin-top', '0px');
-        $('#section').css('margin-top', '0px');
-
-    }
-})
+    
     </script>
 </body>
 </html>
