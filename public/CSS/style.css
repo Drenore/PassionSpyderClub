@@ -3,21 +3,87 @@ body{
     margin: 0;
     
 }
+
 .bg-noir{
     background-color: black;
 }
+.headerFix{
+    height: 60px;
+}
+.navBox{
+    
+    
+}
 nav{
     height: 80px;
+     
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background-color: #FFCB01;
+    z-index: 8888;
+    box-shadow: 0px 8px 24px black;
+    
+    
     
 }
 nav a{
     
-    color: white;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Open Sans";
+    font-family: Helvetica, "Helvetica Neue", "Trebuchet MS", sans-serif;
     font-size: 20px;
+    margin: 2px;
+    padding: 15px 10px 15px 10px;
+    text-shadow: 0px 1px 1px black;
+    
    
+}
+.site-nav{
+    display: inline;
+   text-align: left;
+   margin: auto;
+}
+.site-nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.site-nav li{
+    margin-top: 25px;
+}
+.site-nav li:hover a:hover{
+    text-shadow: 0px 1px 1px black;
+    color: #FFCB01;
+    background-color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.active{
+    background-color: FFCB01;
+    color: black;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px black; 
+    
+}
+
+/* Image bannière */
+.startpage{
+    z-index: -2;
+    
+}
+.imgPrinc{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    z-index: -2;
+    
+}
+.textImage{
+    position: absolute;
+    background-color: rgba(200, 200, 200, 0.4);
+    width: 100%;
+    height: 700px;
+    z-index: 2;
 }

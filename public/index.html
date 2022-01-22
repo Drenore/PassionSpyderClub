@@ -17,24 +17,60 @@
     
 </head>
 <body>
-    <header class="bg-noir">
+    <header class="bg-dark headerFix" id="bandeHaut">
         <div class="container">
             <div class="text-center p-3">
                 <img src="images/logoTopSpyder.png" alt="Passion Spyder Club Estima Association">
+                
             </div>
         </div>
     </header>
-    <nav class="bg-dark">
+    <nav class="navBox" id="navBar">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">  
-                    <br>
-                    <a href="#"> Accueil </a>
-                </div>
+                <div class="site-nav col-md-12">
+                    <ul>
+                        <li ><a href="#" class="active">Accueil</a></li>
+                        <li><a href="#">Presentation</a></li>
+                    </ul>
+
+                </div>       
             </div>
         </div>
-
     </nav>
-    
+   
+    <section class="startpage" id="section">
+        <img src="images/imagePrinc.jpg" class="imgPrinc" alt="Passion Spyder Club Estima Association">
+        <div class="textImage">
+
+        </div>
+
+    </section>
+    <script>
+       $(window).scroll(function () {
+    if ($(window).scrollTop() >= 50) {
+        $('#bandeHaut').css('display', 'none');
+        $('#navBar').css('position', 'fixed');
+        $('#navBar').css('top', '0');
+        $('#banner').css('margin-top', '170px');
+        $('#logoNavMobile').css('top', '20px');
+        $('#bannerMob').css('margin-top', '170px');
+        $('#section').css('margin-top', '160px');
+
+
+
+    } else {
+        $('#bandeHaut').css('display', 'block');
+        $('#navBar').css('position', 'static');
+        $('#navBar').css('top', '0');
+        $('#banner').css('margin-top', '0px');
+
+        $('#logoNavMobile').css('top', '60px');
+        $('#bannerMob').css('margin-top', '0px');
+        $('#section').css('margin-top', '0px');
+
+    }
+})
+    </script>
 </body>
 </html>
