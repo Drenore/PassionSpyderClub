@@ -1,7 +1,8 @@
 body{
+
     padding: 0;
     margin: 0;
-    
+    background-color: #d6d6d4fb !important;
 }
 
 .bg-noir{
@@ -39,7 +40,7 @@ nav a{
     font-size: 14px;
     margin: 2px;
     padding: 15px 10px 15px 10px;
-    text-shadow: 0px 1px 1px black;
+    font-weight: 500;
     
    
 }
@@ -56,7 +57,7 @@ nav a{
     margin-top: 25px;
 }
 .site-nav li:hover a:hover{
-    text-shadow: 0px 1px 1px black;
+    
     color: #FFCB01;
     background-color: black;
     text-decoration: none;
@@ -64,10 +65,10 @@ nav a{
 }
 
 .active{
-    background-color: FFCB01;
-    color: black;
+    background-color: black;
+    color: #FFCB01;
     text-decoration: none;
-    text-shadow: 0px 1px 1px black; 
+   
     
 }
 
@@ -84,7 +85,7 @@ nav a{
     
 }
 .textImage{
-    position: absolute;
+    position: relative;
     background-color: rgba(2, 2, 2, 0.3);
     width: 100%;
     height: 700px;
@@ -99,11 +100,44 @@ nav a{
     line-height: 20px;
     text-transform: uppercase;
     text-shadow: 0px 4px 8px black;
-    margin-top: 40px;
+    padding: 40px;
     font-size: 20px;
 }
 .redCol{
     color: #D03E18;
     font-size: 60px;
    
+}
+.titleh2{
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+/* Carte de présentation du club */
+
+.card-pres{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 8px 20px black;
+    
+
+}
+.imgpres{
+    padding: 0 !important;
+  
+
+}
+.imgpres img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+.textpres{
+  text-align: justify;
+  padding: 10px;
+}
+.textpres h3{
+    text-transform: uppercase;
 }
